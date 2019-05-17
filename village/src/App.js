@@ -25,7 +25,7 @@ class App extends Component {
     })
   }
 
-  addSmurf = smurf => {
+  addNewSmurf = smurf => {
     Axios
     .post('http://localhost:3333/smurfs', smurf)
     .then( res => {
@@ -34,7 +34,7 @@ class App extends Component {
     })
     .catch( err => console.log(err))
   }
-  
+
   render() {
     return (
       <div className="App">
