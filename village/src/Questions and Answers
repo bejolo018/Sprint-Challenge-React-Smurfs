@@ -1,0 +1,11 @@
+ Explain the differences between client-side routing and server-side routing.
+
+    Server-side routing is better optimized for search engines (only at the moment), every time we switch pages the whole page has to refresh just to recieve data, client-side routing eliminates this problem however it makes the inital loadup into the website slower.
+
+ Which HTTP methods can be mapped to the CRUD acronym that we use when interfacing with APIs/Servers.
+
+    Create = Post, Read = Get, Update = Put, Delete = Delete
+
+ Mention three tools we can use to make AJAX requests.
+
+    Axios, Fetch API, Request.
