@@ -30,8 +30,7 @@ class App extends Component {
     Axios
     .post('http://localhost:3333/smurfs', smurf)
     .then( res => {
-      this.setState({friends: res.data});
-      this.props.history.push('./friends')
+      this.setState({smurfs: res.data});
     })
     .catch( err => console.log(err))
   }
@@ -46,10 +45,12 @@ class App extends Component {
           </div>
         </nav>
         <Route
-        exact path = '/smurf-form' render = {props => <SmurfForm {...props} addNewSmurf ={this.addNewSmurf}/>}
+        exact path = '/smurf-form' 
+        render = {props => <SmurfForm {...props} addNewSmurf ={this.addNewSmurf}/>}
         />
         <Route
-        exact path = '/' render = {props => <Smurfs smurfs = {this.state.smurfs}/>}
+        exact path = '/' 
+        render = {props => <Smurfs smurfs = {this.state.smurfs}/>}
         />
       </div>
     );
