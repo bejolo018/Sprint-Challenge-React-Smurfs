@@ -1,0 +1,30 @@
+.Smurf{
+    margin-left: -45px;
+    border-bottom: 1px dashed rgb(17, 0, 255);
+
+}
+
+.Smurf h3{
+    border-top: 1px dashed blue;
+}
+
+.SmurfForm{
+    display: flex;
+    justify-content: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+input{
+    padding: 20px;
+    height: 30px;
+    width:800px;
+}
+
+button{
+    height: 100px;
+}
